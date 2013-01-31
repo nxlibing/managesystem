@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Dictionary.Entities">
+	<class name="Base_Item" table="Base_Item">
+
+		<id name="Fguid" column="Fguid" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+
+    <bag name="ItemDetailsList" inverse="true" lazy="false" >
+      <key column="Pguid" />
+      <one-to-many class="Base_ItemDetails" />
+    </bag>
+		<property column="Pguid" type="String" name="Pguid" length="36" />
+		<property column="Name" type="String" name="Name" length="50" />
+		<property column="Code" type="String" name="Code" length="10" />
+		<property column="Level" type="String" name="Level" length="10" />
+		
+	</class>
+</hibernate-mapping>

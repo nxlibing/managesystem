@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Security.Entities">
+	<class name="Base_User" table="Base_User">
+
+		<id name="Fguid" column="FGUID" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="Username" type="String" name="Username" length="50" />
+		<property column="Realname" type="String" name="Realname" length="50" />
+		<property column="Password" type="String" name="Password" length="50" />
+		<property column="Status" type="String" name="Status" length="10" />
+		<property column="Description" type="String" name="Description" length="200" />
+		<property column="Createid" type="String" name="Createid" length="36" />
+		<property column="Createdate" type="DateTime" name="Createdate" />
+		
+	</class>
+</hibernate-mapping>

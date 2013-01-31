@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00ECE350-2802-4A82-A345-EC81F8944B53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Presenter</RootNamespace>
+    <AssemblyName>DotNet.Presenter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Cms\ArticleEditIView.cs" />
+    <Compile Include="Admin\Cms\ArticleEditPresenter.cs" />
+    <Compile Include="Admin\Cms\ArticleListIView.cs" />
+    <Compile Include="Admin\Cms\ArticleListPresenter.cs" />
+    <Compile Include="Admin\Cms\CategoryEditIView.cs" />
+    <Compile Include="Admin\Cms\CategoryEditPresentry.cs" />
+    <Compile Include="Admin\Cms\CategoryListIView.cs" />
+    <Compile Include="Admin\Cms\CategoryListPresenter.cs" />
+    <Compile Include="Admin\Dictionary\DictionaryDetailsListIView.cs" />
+    <Compile Include="Admin\Dictionary\DictionaryDetailsListPresenter.cs" />
+    <Compile Include="Admin\Dictionary\DictionaryListIView.cs" />
+    <Compile Include="Admin\Dictionary\DictionaryListPresenter.cs" />
+    <Compile Include="Admin\Security\Authentication.cs" />
+    <Compile Include="Admin\Security\AuthenticationIView.cs" />
+    <Compile Include="Admin\Security\ModuleEditIView.cs" />
+    <Compile Include="Admin\Security\ModuleEditPresenter.cs" />
+    <Compile Include="Admin\Security\ModuleManageIView.cs" />
+    <Compile Include="Admin\Security\ModuleManagePresenter.cs" />
+    <Compile Include="Admin\Security\PasswordIView.cs" />
+    <Compile Include="Admin\Security\PasswordPresenter.cs" />
+    <Compile Include="Admin\Security\RoleEditIView.cs" />
+    <Compile Include="Admin\Security\RoleEditPresenter.cs" />
+    <Compile Include="Admin\Security\RoleManageIView.cs" />
+    <Compile Include="Admin\Security\RoleManagePresenter.cs" />
+    <Compile Include="Admin\Security\RoleModuleIView.cs" />
+    <Compile Include="Admin\Security\RoleModulePresenter.cs" />
+    <Compile Include="Admin\Security\UserEditIView.cs" />
+    <Compile Include="Admin\Security\UserEditPresenter.cs" />
+    <Compile Include="Admin\Security\UserManageIView.cs" />
+    <Compile Include="Admin\Security\UserManagePresenter.cs" />
+    <Compile Include="Admin\Security\UserRoleIView.cs" />
+    <Compile Include="Admin\Security\UserRolePresenter.cs" />
+    <Compile Include="Controls\DictionaryPresenter.cs" />
+    <Compile Include="Controls\IDictionaryView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.Business\DotNet.Business.csproj">
+      <Project>{DE6C503C-4B91-46A5-ABAE-B52737EADF84}</Project>
+      <Name>DotNet.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Common\DotNet.Common.csproj">
+      <Project>{80138AE2-2492-47BF-A73E-2007ADA3829E}</Project>
+      <Name>DotNet.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Core\DotNet.Core.csproj">
+      <Project>{689C8B09-6133-440A-8297-0D81DBB13B5A}</Project>
+      <Name>DotNet.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

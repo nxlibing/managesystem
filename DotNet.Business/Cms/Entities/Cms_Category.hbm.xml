@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Cms.Entities">
+	<class name="Cms_Category" table="CMS_Category">
+
+		<id name="Fguid" column="Fguid" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="Categoryid" type="String" name="Categoryid" length="10" />
+		<property column="Title" type="String" name="Title" length="100" />
+		<property column="Pguid" type="String" name="Pguid" length="36" />
+		<property column="Url" type="String" name="Url" length="300" />
+		<property column="Description" type="String" name="Description" length="500" />
+		<property column="Isadd" type="Boolean" name="Isadd" />
+		
+	</class>
+</hibernate-mapping>

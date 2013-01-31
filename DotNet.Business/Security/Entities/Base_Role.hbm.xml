@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Security.Entities">
+	<class name="Base_Role" table="Base_Role">
+
+		<id name="Fguid" column="FGUID" type="String">
+			<generator class="assigned"/>
+		</id>
+		<property column="Rolename" type="String" name="Rolename" length="50" />
+		<property column="Description" type="String" name="Description" length="200" />
+		<property column="Status" type="String" name="Status" length="10" />
+		<property column="Createid" type="String" name="Createid" length="36" />
+		<property column="Createdate" type="DateTime" name="Createdate" />
+		
+	</class>
+</hibernate-mapping>

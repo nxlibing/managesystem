@@ -1,0 +1,64 @@
+﻿html,body{ margin:0; padding:0; background:rgb(244, 244, 244); font-size:12px;}
+*{margin:0;padding:0;}
+a{ color:#4f4f4f; text-decoration:none}
+.input{ height:25px; line-height:27px; background:url(../images/input_bg.png) repeat-x; border:1px solid #c5c5c5;}
+textarea{border:1px solid #c5c5c5;}
+textarea:hover,.input:hover{  background:#f1f1f1;}
+input[type="button"]{ width:64px; height:29px; background:url(../images/btn_bg_m.png) no-repeat; border:0; cursor:pointer; word-spacing:10px; line-height:29px;}
+input[type="submit"]{ width:64px; height:29px; background:url(../images/btn_bg_m.png) no-repeat; border:0; cursor:pointer; word-spacing:10px; line-height:29px;}
+
+.icon{float:left; padding-top:2px; margin-bottom:0px; width:40px; text-align:center;}
+.line{width:100%; height:2px; background:url(../images/line.gif) repeat-x; float:left;}
+
+select{ height:27px; line-height:27px; background:url(../images/input_bg.png) repeat-x; border:1px solid #c5c5c5;}
+
+.listtable { empty-cells: show; border-collapse: collapse; background:#fff; border: 1px solid #d6d6d6; float:left; }
+.listtable td,th{border: 1px solid #d6d6d6; padding:0 7px; }
+.listtable td{line-height:27px;}
+.listtable th{height:30px; line-height:30px; background:url(../images/gridtitle.png) #f1f1f1 repeat-x;}
+.listtable a{ cursor:pointer}
+.listtable .AlternatingRow{ background:#f1f1f1;}
+.listtable .RowHover{ background:#cbe3f4}
+.listtable .hidden{ display:none}
+
+.title{border:1px solid #d6d6d6; width:100%; background:url(../images/admintitleft.gif) repeat-x; line-height:30px; float:left; letter-spacing:2px; }
+.title span {  font-size:12px; }
+.title span strong{  font-size:14px; } 
+.title span a { color:#3186c8}
+.title span a:hover { font-weight:600}
+
+.subtitle{ width:100%; float:left;line-height:27px; margin:10px 0;}
+.subtitle span{  font-size:12px; }
+.subtitle span a{ color:#3186c8;}
+
+.container{ width:98%; margin:auto auto;}
+
+.container .search{ width:100%; float:left; overflow:hidden; background:url(../images/line.gif) 0 40px repeat-x}
+.container .search .searchtitle{ width:100%; height:50px; line-height:50px; text-indent:35px; font-family:黑体; font-weight:bold; font-size:14PX; float:left; background:url(../images/search_title.png) 7px 50% no-repeat;}
+.container .search .addtitle{ width:100%; height:50px; line-height:50px; text-indent:35px; font-family:黑体; font-weight:bold; font-size:14PX; float:left; background:url(../images/add.gif) 7px 50% no-repeat;}
+.container .search .searchcontent{ width:100%; font-size:12px; float:left; overflow:hidden; padding:3px 0;}
+.container .search .searchcontent  span{ display:block; float:left; margin-left:10px; line-height:30px;}
+
+.container #gridmenu{ width:100%; height:31px;  margin-top:10px; float:left; background:url(../images/gridmenu.png) repeat-x; overflow:hidden;}
+.container #gridmenu span{ display:block; width:auto;height:31px; line-height:31px; border:1px solid #d6d6d6;font-family: arial}
+.container #gridmenu span a{    text-indent:20px; margin:0 15px;  float:left;  cursor:pointer; }
+.container #gridmenu span em {font-size:13px;   color:#c6c6c6; float:left;}
+.container #gridmenu span .add{background:url(../images/icon8.gif) 0 50% no-repeat; float:left;  }
+.container #gridmenu span .edit{background:url(../images/icon9.gif) 0 50% no-repeat; float:left;  }
+.container #gridmenu span .count{background:url(../images/icon10.gif) 0 50% no-repeat; float:left;  }
+.container #gridmenu span .chkall{background:url(../images/checkall.gif) 0 50% no-repeat; float:left;  }
+.container #gridmenu span .del{background:url(../images/delete.gif) 0 35% no-repeat; float:left;  }
+.container #gridmenu span .role{background:url(../images/role.png) 0 50% no-repeat; float:left;  }
+.container #gridmenu span .password{background:url(../images/Password.png) 0 50% no-repeat; float:left;  }
+/*
+.gridmenu{ width:100%; height:31px; background:url(../images/gridmenu.png) repeat-x; float:left; border:1px solid #d6d6d6; border-bottom:none;  margin-top:10px; overflow:hidden;}
+.gridtitle{ width:100%; height:30px; background:url(../images/gridtitle.png) repeat-x; float:left; border:1px solid #d6d6d6; border-top:0; }
+*/
+
+
+/*编辑页样式*/
+.editbody{ padding:3px;}
+.edittable { display:block; empty-cells: show; border-collapse: collapse;width:100%; background:#fff; border: 1px solid #d6d6d6; }
+.edittable td{ text-align:left;  float:left; padding:3px;}
+
+.edittable .title{  width:100px; line-height:27px; border:0; text-align:right; background:rgb(244, 244, 244); font-weight:bold; float:left; }

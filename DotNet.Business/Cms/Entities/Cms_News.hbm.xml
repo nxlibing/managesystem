@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Cms.Entities">
+	<class name="Cms_News" table="CMS_News">
+
+		<id name="Fguid" column="Fguid" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="Title" type="String" name="Title" length="100" />
+		<property column="Contents" type="String" name="Contents" length="2147483647" />
+		<property column="Accept" type="String" name="Accept" length="300" />
+		<property column="Author" type="String" name="Author" length="100" />
+		<property column="Stime" type="DateTime" name="Stime" />
+		<property column="Etime" type="DateTime" name="Etime" />
+		<property column="Isnowsend" type="Int32" name="Isnowsend" />
+		<property column="Sendinterval" type="Int32" name="Sendinterval" />
+		<property column="Jlr" type="String" name="Jlr" length="36" />
+		<property column="Jlsj" type="DateTime" name="Jlsj" />
+		
+	</class>
+</hibernate-mapping>

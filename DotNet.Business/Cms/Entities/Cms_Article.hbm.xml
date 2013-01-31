@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Cms.Entities">
+	<class name="Cms_Article" table="CMS_Article">
+
+		<id name="Fguid" column="Fguid" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="Categoryid" type="String" name="Categoryid" length="36" />
+    <many-to-one name="Category"  column="Categoryid" insert="false" update="false" />
+		<property column="Title" type="String" name="Title" length="200" />
+		<property column="Author" type="String" name="Author" length="50" />
+		<property column="Source" type="String" name="Source" length="100" />
+		<property column="LinkUrl" type="String" name="LinkUrl" length="200" />
+		<property column="Contents" type="String" name="Contents" length="2147483647" />
+		<property column="Introduction" type="String" name="Introduction" length="500" />
+		<property column="Keywords" type="String" name="Keywords" length="100" />
+		<property column="Ishot" type="Int32" name="Ishot" />
+		<property column="IsRecomend" type="Int32" name="IsRecomend" />
+		<property column="Istop" type="Int32" name="Istop" />
+		<property column="Iscolor" type="Int32" name="Iscolor" />
+		<property column="Status" type="String" name="Status" length="10" />
+		<property column="Click" type="Int32" name="Click" />
+		<property column="Pubsj" type="DateTime" name="Pubsj" />
+		<property column="Editid" type="String" name="Editid" length="36" />
+		<property column="Editsj" type="DateTime" name="Editsj" />
+		<property column="Jlr" type="String" name="Jlr" length="36" />
+		<property column="Jlsj" type="DateTime" name="Jlsj" />
+		
+	</class>
+</hibernate-mapping>

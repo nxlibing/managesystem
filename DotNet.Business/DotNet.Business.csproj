@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DE6C503C-4B91-46A5-ABAE-B52737EADF84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotNet.Business</RootNamespace>
+    <AssemblyName>DotNet.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\Lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\Lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>..\Lib\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinesBase.cs" />
+    <Compile Include="Cms\Entities\Cms_Article.cs" />
+    <Compile Include="Cms\Entities\Cms_Category.cs" />
+    <Compile Include="Cms\Entities\Cms_News.cs" />
+    <Compile Include="Cms\Repositories\ArticleRepository.cs" />
+    <Compile Include="Dao\ICommonDao.cs" />
+    <Compile Include="Dao\IOracleDataAccess.cs" />
+    <Compile Include="Dao\StringMatchType.cs" />
+    <Compile Include="BaseClass\BaseClass.cs" />
+    <Compile Include="Dictionary\Domain\Base_Item.cs" />
+    <Compile Include="Dictionary\Domain\Base_ItemDetails.cs" />
+    <Compile Include="Dictionary\Entities\Base_Item.cs" />
+    <Compile Include="Dictionary\Entities\Base_ItemDetails.cs" />
+    <Compile Include="Dictionary\Repositories\Base_ItemRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Security\Domain\User.cs" />
+    <Compile Include="Security\Entities\Base_Module.cs" />
+    <Compile Include="Security\Entities\Base_Role.cs" />
+    <Compile Include="Security\Entities\Base_RoleModule.cs" />
+    <Compile Include="Security\Entities\Base_User.cs" />
+    <Compile Include="Security\Entities\Base_UserRole.cs" />
+    <Compile Include="Security\Repositories\ModuleRepository.cs" />
+    <Compile Include="Security\Repositories\RoleRepository.cs" />
+    <Compile Include="Security\Repositories\UserManage.cs" />
+    <Compile Include="Security\Repositories\UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet.Common\DotNet.Common.csproj">
+      <Project>{80138AE2-2492-47BF-A73E-2007ADA3829E}</Project>
+      <Name>DotNet.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Core\DotNet.Core.csproj">
+      <Project>{689C8B09-6133-440A-8297-0D81DBB13B5A}</Project>
+      <Name>DotNet.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotNet.Facilities\DotNet.Facilities.csproj">
+      <Project>{9C4A393E-322E-43DC-AC92-545382C674B2}</Project>
+      <Name>DotNet.Facilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cms\Domain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Security\Entities\Base_Module.hbm.xml" />
+    <EmbeddedResource Include="Security\Entities\Base_Role.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Entities\Base_RoleModule.hbm.xml" />
+    <EmbeddedResource Include="Security\Entities\Base_User.hbm.xml" />
+    <EmbeddedResource Include="Security\Entities\Base_UserRole.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cms\Entities\Cms_Article.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cms\Entities\Cms_Category.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cms\Entities\Cms_News.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dictionary\Entities\Base_Item.hbm.xml" />
+    <EmbeddedResource Include="Dictionary\Entities\Base_ItemDetails.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

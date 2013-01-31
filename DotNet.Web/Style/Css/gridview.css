@@ -1,0 +1,55 @@
+﻿
+a
+{
+    text-decoration: none;
+}
+.page, .page table, .page tr, .page td
+{
+    background: #f1f1f1;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+#DotNetpageinfo
+{
+    float: left;
+}
+#DotNetpaging
+{
+    float: right;
+}
+#DotNetpaging a
+{
+    color: #000;
+}
+#DotNetpaging a:hover
+{
+    color: #3186c8;
+}
+#DotNetpaging .link
+{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    background: url(../images/page.png) no-repeat;
+    text-align: center;
+}
+
+#DotNetpaging .link:hover
+{
+    background: url(../images/page_hover.png) no-repeat;
+    color: #fff;
+}
+#DotNetpaging span
+{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    background: url(../images/page_hover.png) no-repeat;
+    text-align: center;
+    color: #fff;
+}
+

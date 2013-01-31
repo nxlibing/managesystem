@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Security.Entities">
+	<class name="Base_Module" table="Base_Module">
+
+		<id name="Fguid" column="Fguid" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="Moduleno" type="String" name="Moduleno" length="50" />
+		<property column="Title" type="String" name="Title" length="100" />
+		<property column="Description" type="String" name="Description" length="200" />
+		<property column="Navigateurl" type="String" name="Navigateurl" length="200" />
+		<property column="Icon" type="String" name="Icon" length="200" />
+		<property column="Dispindex" type="String" name="Dispindex" length="10" />
+		<property column="Pguid" type="String" name="Pguid" length="36" />
+		<property column="Status" type="String" name="Status" length="10" />
+		<property column="Createid" type="String" name="Createid" length="36" />
+		<property column="Createdate" type="DateTime" name="Createdate" />
+		
+	</class>
+</hibernate-mapping>

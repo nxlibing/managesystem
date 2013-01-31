@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="DotNet.Business" namespace="DotNet.Business.Security.Entities">
+	<class name="Base_UserRole" table="Base_UserRole">
+
+		<id name="Fguid" column="Fguid" type="String">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="Roleid" type="String" name="Roleid" length="36" />
+		<property column="Userid" type="String" name="Userid" length="36" />
+		
+	</class>
+</hibernate-mapping>

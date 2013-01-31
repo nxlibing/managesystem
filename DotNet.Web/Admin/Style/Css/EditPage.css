@@ -1,0 +1,16 @@
+﻿*{margin:0;padding:0;}
+html,body{  background:#fff; font-size:12px; overflow:hidden;}
+
+body{ padding:2px;}
+table { display:block; empty-cells: show; border-collapse: collapse;width:100%; background:#fff; border: 1px solid #d6d6d6; }
+table td{ text-align:left;  float:left; padding:3px;}
+
+table .title{  width:100px; line-height:27px;  text-indent:7px; background:rgb(244, 244, 244); font-weight:bold; float:left; }
+
+.input{ height:25px; line-height:25px; padding:0 2px; background:url(../images/input_bg.png) repeat-x; border:1px solid #c5c5c5;}
+.input:hover,select:hover{  background:#f1f1f1;}
+select{ height:28px; line-height:28px; background:url(../images/input_bg.png) repeat-x; border:1px solid #c5c5c5;}
+
+
+.checktb{ border:0; margin:0 ; padding:0}
+

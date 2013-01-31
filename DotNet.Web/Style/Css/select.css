@@ -1,0 +1,98 @@
+﻿.selectdiv
+{
+    float: left;
+}
+.selectdiv .select_box
+{
+    height: 27px;
+    font-size: 12px;
+    float: left;
+    background: url(../images/input_bg.png) repeat-x;
+    position: absolute;
+}
+
+.selectdiv DIV.tag_select
+{
+    padding-right: 10px;
+    display: block;
+    padding-left: 10px;
+    background: url(../images/select.gif) no-repeat 95% center;
+    border-top: 1px solid #a6a5a5;
+    border-left: 1px solid #a6a5a5;
+    border-right: 1px #e1e1e1 solid;
+    border-bottom: 1px #e1e1e1 solid;
+    padding-bottom: 0px;
+    color: #000;
+    line-height: 25px;
+    padding-top: 0px;
+    height: 25px;
+}
+
+.selectdiv DIV.tag_select_hover
+{
+    padding-right: 10px;
+    display: block;
+    padding-left: 10px;
+    color: #000;
+    background: #f1f1f1 url(../images/select_hover.gif) no-repeat 95% center;
+    border-top: 1px solid #a6a5a5;
+    border-left: 1px solid #a6a5a5;
+    border-right: 1px #e1e1e1 solid;
+    border-bottom: 1px #e1e1e1 solid;
+    line-height: 25px;
+    height: 25px;
+}
+
+.selectdiv DIV.tag_select_open
+{
+    padding-right: 10px;
+    display: block;
+    padding-left: 10px;
+    background: url(../images/select_hover.gif) no-repeat 95% center;
+    border-top: 1px solid #a6a5a5;
+    border-left: 1px solid #a6a5a5;
+    border-right: 1px #e1e1e1 solid;
+    border-bottom: 1px #e1e1e1 solid;
+    color: #79a2bd;
+    line-height: 25px;
+    padding-top: 0px;
+    height: 25px;
+}
+
+.selectdiv UL.tag_options
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    border: solid 1px #cdcdcd;
+    margin-left: 0px;
+    padding-top: 0px;
+    list-style-type: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.selectdiv UL.tag_options LI
+{
+    padding-right: 10px;
+    display: block;
+    padding-left: 10px;
+    background: #FFF;
+    padding-bottom: 0px;
+    color: #000;
+    line-height: 26px;
+    padding-top: 0px;
+    height: 26px;
+    text-decoration: none;
+}
+
+.selectdiv UL.tag_options LI.open_hover
+{
+    background: #417eb7;
+    color: #fff;
+}
+
+.selectdiv UL.tag_options LI.open_selected
+{
+    background: #417eb7;
+    color: #fff;
+}
