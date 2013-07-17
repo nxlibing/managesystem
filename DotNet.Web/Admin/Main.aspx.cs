@@ -13,15 +13,15 @@ namespace DotNet.Web.Admin
         {
             if (!IsPostBack)
             {
-                if (null != User)
-                {
-                    username.InnerHtml = User.Realname + "&nbsp;&nbsp;(" + User.Username + ")";
-                    username.Attributes.Add("p", User.Password);
-                }
-                else
-                {
-                    RedirectLogin();
-                }
+                //if (null != User)
+                //{
+                //    username.InnerHtml = User.Realname + "&nbsp;&nbsp;(" + User.Username + ")";
+                //    username.Attributes.Add("p", User.Password);
+                //}
+                //else
+                //{
+                //    RedirectLogin();
+                //}
             }
           //  Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "", "<script type=\"text/javascript\">LockScreen();</script>");
         }

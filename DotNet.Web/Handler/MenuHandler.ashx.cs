@@ -90,9 +90,9 @@ namespace DotNet.Web.UI.Handler
             {
                 if (item.Moduleno.Length == 4)
                 {
-                    menu += string.Format(mainmenu, item.Title);
-                    menu += CreateMenu(item.Fguid, list);
-                    menu = string.Format("<ul>{0}</ul>", menu);
+                    string submenu = string.Format(mainmenu, item.Title);
+                    submenu += CreateMenu(item.Fguid, list);
+                    menu += string.Format("<ul>{0}</ul>", submenu);
                 }
                 else if (item.Moduleno.Length == 6)
                 {
