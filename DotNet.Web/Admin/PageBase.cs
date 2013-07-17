@@ -20,7 +20,6 @@ namespace DotNet.Web.Admin
                 //{
                 return Session["userAccount"] as Business.Security.Domain.User;
                 //}
-
             }
         }
         #region 页面初始化
