@@ -25,7 +25,6 @@ namespace DotNet.Web.UI.Handler
 
         private string GetMenu(string sysNo)
         {
-
             string result = "{{\"mainmenu\":\"{0}\",\"leftmenu\":\"{1}\"}}";
 
             string mainmenu = "";
