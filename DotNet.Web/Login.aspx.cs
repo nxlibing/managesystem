@@ -14,7 +14,7 @@ namespace DotNet.Web
         public string Password { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Common.Log.Error("a");
         }
 
         protected void btn_Ok_Click(object sender, EventArgs e)
